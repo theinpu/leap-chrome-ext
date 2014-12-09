@@ -100,15 +100,17 @@ Leap.loop({enableGestures: true}, function (frame) {
                         var swipeDirection = '';
                         if (isHorizontal) {
                             if (gesture.direction[0] > 0) {
-                                swipeDirection = "right";
+                                goForward();
+                                //swipeDirection = "right";
                             } else {
-                                swipeDirection = "left";
+                                goBack();
+                                //swipeDirection = "left";
                             }
                         } else {
                             if (gesture.direction[1] > 0) {
-                                swipeDirection = "up";
+                                //swipeDirection = "up";
                             } else {
-                                swipeDirection = "down";
+                                //swipeDirection = "down";
                             }
                         }
                     }
