@@ -1,0 +1,28 @@
+{
+    "name": "leap test",
+    "version": "0.1",
+    "description": "leap motion test extension",
+    "permissions": [
+        "tabs",
+        "*://*/*",
+        "idle",
+        "webRequest",
+        "webRequestBlocking",
+        "webNavigation",
+        "alarms",
+        "storage",
+        "history"
+    ],
+    "content_security_policy": "default-src 'self'; style-src 'self'; connect-src *; frame-src 'self'",
+    "background": {
+        "scripts": [
+            "leap-0.6.4.js",
+            "leap_test.js"
+        ],
+        "matches": [
+            "*://*/*"
+        ],
+        "run_at": "document_end"
+    },
+    "manifest_version": 2
+}
